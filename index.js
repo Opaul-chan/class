@@ -27,8 +27,8 @@ class Media {
     let sumOfRatings = this._ratings.reduce((perviousRating, rating) => perviousRating + rating,0)
     return Math.floor(sumOfRatings / this._ratings.length)
   }
-  set isCheckedOut(checksIn){
-    this.isCheckedOut = checkIn
+  set isCheckedOut(input){
+    this.isCheckedOut = input;
   }
 }
 // class Book
